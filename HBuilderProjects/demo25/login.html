@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			input{
+				box-sizing: border-box;
+				padding: 10px;
+				width: 150px;
+				height: 30px;
+				line-height: 30px;
+			}
+			#sub{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="login.php" method="post">
+			<label>账号:<input type="text" id="username"	placeholder="请输入账号" pattern=/^\w+/	/></label><br/>
+			<label>密码:<input type="password" id="pwd"  placeholder="请输入密码" pattern=/^\w+/	/></label><br/>
+			<input type="submit" value="登录" id="sub"/>
+		</form>
+	</body>
+</html>
